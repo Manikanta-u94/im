@@ -1,0 +1,14 @@
+	{% extends 'base.html' %}
+{% block content %}
+
+<h3>Edit details</h3>
+
+<form method="POST">
+	
+	 {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-info" >Update</button>
+    <!-- <input type="submit" value="Save"> -->
+</form>
+
+{% endblock %}
